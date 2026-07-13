@@ -149,13 +149,18 @@ const fetchGitHubRepos = async (username) => {
     }
 
     try {
-        const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=6`);
+        const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=10`);
         if (!response.ok) throw new Error('Network response was not ok');
         const repos = await response.json();
         
+        // Filter out the portfolio repository itself
+        const filteredRepos = repos
+            .filter(repo => repo.name.toLowerCase() !== 'portfolio')
+            .slice(0, 6);
+        
         container.innerHTML = ''; // Clear placeholders
         
-        repos.forEach(repo => {
+        filteredRepos.forEach(repo => {
             const tech = repo.language ? `<span>${repo.language}</span>` : '';
             const stars = repo.stargazers_count > 0 ? `<span><i class="fas fa-star" style="color:var(--primary-color)"></i> ${repo.stargazers_count}</span>` : '';
             
