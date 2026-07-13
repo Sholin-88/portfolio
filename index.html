@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sholin | Android Developer</title>
+    <meta name="description" content="Portfolio of Sholin, a passionate Android Developer building impactful mobile applications.">
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Three.js for 3D Elements -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+<body>
+    <!-- 3D Canvas Background -->
+    <div id="canvas-container"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="logo">Sholin<span class="highlight">.dev</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">GitHub Repos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in-on-scroll">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Sholin">Sholin</h1>
+                <h2 class="subtitle">Android Developer</h2>
+                <p class="hero-description">
+                    Crafting elegant, high-performance mobile experiences. I turn deep thoughts into flawless code.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-container floating-animation">
+                <img src="assets/hero_image.png" alt="Developer Thinking Deeply" class="hero-img glass-effect">
+            </div>
+        </section>
+
+        <!-- About/Resume Area -->
+        <section id="about" class="about section-padding fade-in-on-scroll">
+            <div class="section-header">
+                <h2>About <span class="highlight">Me</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-container glass-card">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p id="resume-summary-placeholder">
+                        Android Developer with 6.7 years of work experience building robust mobile applications using Kotlin and Java. Proficient in modern architecture patterns (MVVM), local data management (Room/SQLite), and API integration (Retrofit). Experienced in developing features for real-time communication, BLE-based devices, and e-commerce platforms. Proven ability to deliver production-ready applications and collaborate effectively in Agile environments.
+                    </p>
+                    <a href="_SholinPaul-Resume 2026Latest.pdf" target="_blank" class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <span class="stat-number">6.7</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Companies</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section-padding fade-in-on-scroll">
+           <div class="section-header">
+                <h2>My <span class="highlight">Skills</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-grid" id="skills-container-placeholder">
+                 <div class="skill-chip"><i class="fab fa-android"></i> Kotlin & Java</div>
+                 <div class="skill-chip"><i class="fas fa-mobile-alt"></i> Jetpack Compose</div>
+                 <div class="skill-chip"><i class="fas fa-cubes"></i> MVVM Architecture</div>
+                 <div class="skill-chip"><i class="fas fa-database"></i> Room DB</div>
+                 <div class="skill-chip"><i class="fab fa-bluetooth-b"></i> Bluetooth Low Energy (BLE)</div>
+                 <div class="skill-chip"><i class="fas fa-money-bill-wave"></i> Google Play Billing</div>
+                 <div class="skill-chip"><i class="fas fa-network-wired"></i> Retrofit & Rest API</div>
+                 <div class="skill-chip"><i class="fab fa-git-alt"></i> Git & Source Tree</div>
+                 <div class="skill-chip"><i class="fas fa-plug"></i> Socket Connection</div>
+                 <div class="skill-chip"><i class="fas fa-link"></i> Data Binding</div>
+                 <div class="skill-chip"><i class="fas fa-paper-plane"></i> Postman</div>
+                 <div class="skill-chip"><i class="fas fa-fire"></i> FireBase</div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section-padding fade-in-on-scroll">
+            <div class="section-header">
+                <h2>Work <span class="highlight">Experience</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item glass-card">
+                    <h4>Android Developer</h4>
+                    <h5>Appadore Technologies Pvt.Ltd <span>(Aug 2023 – Present)</span></h5>
+                    <ul>
+                        <li>Engineered a chat application in Kotlin using MVVM Architecture.</li>
+                        <li>Implemented Socket connection for real-time communication and Google Play Billing for monetization.</li>
+                        <li>Developed a real-time audio/video conferencing feature using Agora SDK and Hundred MS with Banuba filters.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item glass-card">
+                    <h4>Android Developer</h4>
+                    <h5>Xenia Technologies Pvt.Ltd <span>(Apr 2023 – July 2023)</span></h5>
+                    <ul>
+                        <li>Developed a package-based canteen billing system for Android.</li>
+                        <li>Implemented local data using Room(SQLite) and cloud synchronization using Retrofit.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item glass-card">
+                    <h4>Android Developer</h4>
+                    <h5>Infolitz software Pvt. Ltd <span>(Jan 2022 - Mar 2023)</span></h5>
+                    <ul>
+                        <li>Developed BLE-based mobile applications for monitoring indoor air quality and agriculture.</li>
+                        <li>Implemented device software updates via BLE and handled ModBus 16 calculations.</li>
+                        <li>Conducted R&D for Android Automotive; created a Raspberry Pi speedometer and USB music player.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item glass-card">
+                    <h4>Android Developer</h4>
+                    <h5>Techoriz Digital Solution <span>(May 2021 - Dec 2021)</span></h5>
+                    <ul>
+                        <li>Developed delivery tracking and e-commerce applications for Android.</li>
+                        <li>Integrated Google Maps, reviews, and ratings features using Retrofit.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item glass-card">
+                    <h4>Android Developer</h4>
+                    <h5>Technical Fingers pvt.Ltd <span>(July 2019 - Apr 2021)</span></h5>
+                    <ul>
+                        <li>Developed business management application for Android utilizing Room and Retrofit.</li>
+                        <li>Released project on the Playstore as ‘Diplomat Lite’.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item glass-card">
+                    <h4>Proposal Engineer</h4>
+                    <h5>Lijan GreenTech Pvt.Ltd <span>(July 2018 – Apr 2019)</span></h5>
+                    <ul>
+                        <li>Consulted with clients on green energy solutions and conducted site visits for estimations.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / GitHub Repos -->
+        <section id="projects" class="projects section-padding fade-in-on-scroll">
+           <div class="section-header">
+                <h2>Featured <span class="highlight">GitHub Repos</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid" id="github-repos-container">
+                <!-- Project 1 (Placeholder) -->
+                <div class="project-card glass-card fade-in-on-scroll">
+                    <div class="project-content">
+                        <div class="project-icons">
+                            <i class="fas fa-folder project-folder"></i>
+                            <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="project-title">AwesomeAndroidApp</h3>
+                        <p class="project-desc">[Placeholder] Will be replaced dynamically once GitHub username is configured.</p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>Compose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Placeholder) -->
+                <div class="project-card glass-card fade-in-on-scroll">
+                    <div class="project-content">
+                        <div class="project-icons">
+                            <i class="fas fa-folder project-folder"></i>
+                            <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="project-title">CryptoTracker</h3>
+                        <p class="project-desc">[Placeholder] Will be replaced dynamically once GitHub username is configured.</p>
+                        <div class="project-tech">
+                            <span>Kotlin</span>
+                            <span>MVVM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Placeholder) -->
+                <div class="project-card glass-card fade-in-on-scroll">
+                    <div class="project-content">
+                        <div class="project-icons">
+                            <i class="fas fa-folder project-folder"></i>
+                            <a href="#" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                        <h3 class="project-title">TaskMaster</h3>
+                        <p class="project-desc">[Placeholder] Will be replaced dynamically once GitHub username is configured.</p>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Room</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-repos-btn">
+                <a href="#" class="btn btn-outline" id="github-profile-link"><i class="fab fa-github"></i> View All on GitHub</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding fade-in-on-scroll">
+            <div class="section-header">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content glass-card">
+                <p>Currently open to new opportunities. Let's build something amazing together.</p>
+                <a href="mailto:sholinpaul25@gmail.com" class="btn btn-primary contact-btn">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Sholin-88" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2026 Sholin. Designed with pure CSS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
